@@ -1,0 +1,108 @@
+import java.util.*;
+import java.lang.Exception;
+import java.lang.Thread;
+class Main extends Thread{
+    public static void main(String[] args)throws Exception{
+        try{
+            System.out.println("Enter your name starting letter should be a capital");
+            Scanner sc=new Scanner(System.in);
+            String m=sc.nextLine();
+            int d=m.charAt(0);
+            int i=m.charAt(1);
+            int n=m.charAt(2);
+            int e=m.charAt(3);
+            int s=m.charAt(4);
+            int h=m.charAt(5);
+            Thread.sleep(1000);
+            System.out.print("Loading,please wait");
+            Thread.sleep(1000);
+            System.out.print(".");
+            Thread.sleep(4000);
+            System.out.print(".");
+            Thread.sleep(1000);
+            System.out.println(".");
+            System.out.println(d+" "+i+" " +n+" "+e+" "+s+" "+h);
+            System.out.println();
+            if(((d==77) ||(d==109)) && (i==111) && (n==107) && (e==115) && (s==104) &&(h==97)){
+                for(int i2=1;i2<=10;i2++)
+                    System.out.print("💕");
+                System.out.printf("\n%s\n",m);
+                int x=5;
+                for(int i1=1;i1<=x;i1++){
+                    for(int j1=1;j1<=x;j1++){
+                        if(i1==1){
+                            System.out.print("* ");
+                        }
+                        else if( i1>1){
+                            if(i1<5){
+                                if(j1%3==0){
+                                    System.out.println();
+                                    System.out.print("    *");
+                                }
+                            }
+                        }
+                    }
+                    if(i1==5){
+                        System.out.println();
+                        for(int k=1;k<=5;k++)
+                            System.out.print("* ");
+                    }
+                }
+                System.out.println("\n");
+                for(int i1=1;i1<=5;i1++){
+                    if(i1==5)
+                        for(int j1=1;j1<=5;j1++)
+                            System.out.print("* ");
+                    else
+                        System.out.println("*");
+                }
+                System.out.println("\n");
+                for(int i1=1;i1<=5;i1++){
+                    if(i1==5){
+                        for(int j1=1;j1<=5;j1++){
+                            System.out.print("* ");
+                        }
+                    }
+                    else
+                        System.out.println("*       *");
+                }
+                System.out.println();
+                for(int i2=1;i2<=10;i2++)
+                    System.out.print("💕");
+                System.out.println("\n");
+                char c1=(char)(73);
+                char c2=(char)(76);
+                char c3=(char)(111);
+                char c4=(char)(118);
+                char c5=(char)(101);
+                char c6=(char)(85);
+                Thread.sleep(10000);
+                for(int i1=1;i1<=1000;i1++){
+                    System.out.print("💖💖 "+c1+" "+c2+c3+c4+c5+" "+c6+" "+m+ "💖💖 " +"");
+                    System.out.println();
+                }
+                System.out.println();
+                Thread.sleep(2000);
+                System.out.println("Type 'Y' for yes , 'N' for no ,wants take Time 'T'");
+                String t=sc.next();
+                if (t.equals("Y") || t.equals("y")) {
+                    System.out.println("Thanks for accepting");
+                    System.out.println("I have no words to tell");
+                }
+                else if(t.equals("N")|| t.equals("n"))
+                    System.out.println("ok");
+                else if(t.equals("T") || t.equals("t"))
+                    System.out.println("Your wish is a command for me ");
+                else
+                    System.out.println("You choose Invalid option which is not preferable");
+            }
+            else{
+                throw new Exception("Invalid Name  ");
+            }
+        }
+        catch(Exception e){
+            System.out.println(e);
+            System.out.println("You are not that person please check it out");
+        }
+    }
+}
